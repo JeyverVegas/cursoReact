@@ -26,13 +26,13 @@ class Card extends React.Component {
         const { img, title, description, primaryColor, secondaryColor } = this.props;
 
         return (
-            <div className="card mx-auto Fitness-Card" style={{
+            <div className="card mx-auto Fitness-Card mb-3" style={{
                 backgroundImage: `url(${circlesImg}), linear-gradient(to right, ${primaryColor}, ${secondaryColor})`
             }}>
                 <div className="card-body">
                     <div className="row center">
                         <div className="col-6">
-                            <img src={this.state.image} className="float-right img-card animate__animated animate__fadeIn" />
+                            <img src={img} className="float-right img-card animate__animated animate__fadeIn" />
                         </div>
                         <div className="col-6 Fitness-Card-Info">
                             <h1>{title}</h1>
