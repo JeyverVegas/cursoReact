@@ -1,16 +1,13 @@
 import React from "react";
 import addImage from "../assets/images/add.png";
+import { Link } from "react-router-dom";
 
-function AddExercise(props) {
-
-    return (
-        <div className="text-center mt-5">
-            <a href="http://3.92.133.52/" target="_blank">
-                <img src={addImage} />
-            </a>
-        </div>
-    )
-
-}
+const AddExercise = () => (
+    <div className="text-center mt-5">
+        <Link to="/exercises/new">
+            <img src={addImage} />
+        </Link>
+    </div>
+)
 
 export default AddExercise;

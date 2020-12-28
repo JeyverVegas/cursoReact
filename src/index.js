@@ -1,12 +1,18 @@
+/*DEPENDENCIES*/
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
+
+/*CSS DEPENDENCY*/
 import 'bootstrap/dist/css/bootstrap.css';
 import 'animate.css/animate.css'
-import Excersices from './pages/Exercises';
+
+/* COMPONENTS */
+import App from "./components/App";
+
 
 ReactDOM.render(
-  <Excersices />,
+  <App />,
   document.getElementById('root')
 );
 
